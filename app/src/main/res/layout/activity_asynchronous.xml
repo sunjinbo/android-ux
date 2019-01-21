@@ -17,6 +17,7 @@
             android:layout_height="match_parent">
 
             <Button
+                android:onClick="onLooperClick"
                 android:text="Handler+Looper+Message"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
