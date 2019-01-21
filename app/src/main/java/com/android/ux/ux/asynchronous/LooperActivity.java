@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
+import android.util.LogPrinter;
 
 import com.android.ux.ux.BaseActivity;
 
@@ -17,6 +18,8 @@ public class LooperActivity extends BaseActivity implements Runnable, Handler.Ca
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Looper.myLooper().setMessageLogging(new LogPrinter(Log.DEBUG, TAG));
 
         mMainThreadHandler = new Handler(this);
         mMainThreadHandler.sendEmptyMessageDelayed(0, 1000);
@@ -34,6 +37,8 @@ public class LooperActivity extends BaseActivity implements Runnable, Handler.Ca
     @Override
     public void run() {
         Looper.prepare();
+        Looper.myLooper().setMessageLogging(new LogPrinter(Log.DEBUG, TAG));
+
         mBackgroundThreadHandler = new Handler(new Handler.Callback() {
             @Override
             public boolean handleMessage(Message message) {
@@ -47,7 +52,9 @@ public class LooperActivity extends BaseActivity implements Runnable, Handler.Ca
             }
         });
         mBackgroundThreadHandler.sendEmptyMessageDelayed(0, 1000);
+
         Looper.loop();
+        Looper.myLooper().setMessageLogging(null);
         Log.d(TAG, "Quit background thread looper.");
     }
 
@@ -58,6 +65,7 @@ public class LooperActivity extends BaseActivity implements Runnable, Handler.Ca
             mMainThreadHandler.sendEmptyMessageDelayed(0, 1000);
         } else {
             mMainThreadHandler.removeMessages(0);
+            Looper.myLooper().setMessageLogging(null);
         }
 
         return false;
