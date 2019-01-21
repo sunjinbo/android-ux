@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AsynchronousActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,26 +17,25 @@
             android:layout_height="match_parent">
 
             <Button
-                android:onClick="onAsynchronousClick"
-                android:text="asynchronous"
+                android:text="Handler+Looper+Message"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="plug-in"
+                android:text="AsyncTask+Thread"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="data binding"
+                android:text="Service+IntentService"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="socket"
+                android:text="AIDL"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
