@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Carson_Ho</title>
+      <script>
+        function callAndroid1(){
+            test.hello("JS调用了Android中的hello方法");
+        }
+        function callAndroid2(){
+            document.location = "js://webview?arg1=111&arg2=222";
+        }
+        function callAndroid3(){
+            alert("通过WebChromeClient的onJsAlert()调用Android方法");
+        }
+      </script>
+   </head>
+   <body>
+       <button type="button" id="button1" onclick="callAndroid1()">通过WebView的addJavascriptInterface()调用Android方法</button>
+       <button type="button" id="button2" onclick="callAndroid2()">通过WebViewClient复写shouldOverrideUrlLoading()调用Android方法</button>
+       <button type="button" id="button3" onclick="callAndroid3()">通过WebChromeClient的onJsAlert()调用Android方法</button>
+   </body>
+</html>

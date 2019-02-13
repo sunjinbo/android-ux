@@ -16,4 +16,8 @@ public class MainActivity extends Activity {
     public void onAsynchronousClick(View view) {
         startActivity(new Intent(this, AsynchronousActivity.class));
     }
+
+    public void onWebViewJSClick(View view) {
+        startActivity(new Intent(this, WebViewActivity.class));
+    }
 }

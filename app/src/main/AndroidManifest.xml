@@ -21,7 +21,11 @@
         </activity>
         <activity android:name=".AsynchronousActivity" />
         <activity android:name=".asynchronous.LooperActivity" />
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".asynchronous.FutureActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".webview.AndroidCallJSActivity" />
+        <activity android:name=".webview.JSCallAndroidActivity"></activity>
     </application>
 
 </manifest>
