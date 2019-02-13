@@ -2,10 +2,8 @@ package com.android.ux.ux.webview;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
@@ -25,7 +23,7 @@ public class JSCallAndroidActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jscall_android);
+        setContentView(R.layout.activity_js_call_android);
         mWebView = findViewById(R.id.web_view);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true); // 设置与Js交互的权限
