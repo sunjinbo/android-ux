@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.android.ux.ux.asynchronous.FutureActivity;
+import com.android.ux.ux.asynchronous.HandlerThreadActivity;
 import com.android.ux.ux.asynchronous.LooperActivity;
 
 public class AsynchronousActivity extends Activity {
@@ -22,5 +23,9 @@ public class AsynchronousActivity extends Activity {
 
     public void onFutureClick(View view) {
         startActivity(new Intent(this, FutureActivity.class));
+    }
+
+    public void onHandlerThreadClick(View view) {
+        startActivity(new Intent(this, HandlerThreadActivity.class));
     }
 }

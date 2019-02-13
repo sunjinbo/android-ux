@@ -21,6 +21,7 @@
         <activity android:name=".AsynchronousActivity" />
         <activity android:name=".asynchronous.LooperActivity" />
         <activity android:name=".asynchronous.FutureActivity" />
+        <activity android:name=".asynchronous.HandlerThreadActivity" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".webview.AndroidCallJSActivity" />
         <activity android:name=".webview.JSCallAndroidActivity" />
