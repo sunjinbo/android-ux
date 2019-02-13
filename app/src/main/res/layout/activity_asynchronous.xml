@@ -25,7 +25,7 @@
 
             <Button
                 android:onClick="onFutureClick"
-                android:text="Thread+Runnable+Callable"
+                android:text="Runnable+Callable"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
