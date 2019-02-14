@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,8 @@
         <activity android:name=".WebViewActivity" />
         <activity android:name=".webview.AndroidCallJSActivity" />
         <activity android:name=".webview.JSCallAndroidActivity" />
+        <activity android:name=".NetworkActivity" />
+        <activity android:name=".network.HttpActivity" />
     </application>
 
 </manifest>

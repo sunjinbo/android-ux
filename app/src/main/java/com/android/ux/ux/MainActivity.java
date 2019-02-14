@@ -20,4 +20,8 @@ public class MainActivity extends Activity {
     public void onWebViewJSClick(View view) {
         startActivity(new Intent(this, WebViewActivity.class));
     }
+
+    public void onNetworkClick(View view) {
+        startActivity(new Intent(this, NetworkActivity.class));
+    }
 }

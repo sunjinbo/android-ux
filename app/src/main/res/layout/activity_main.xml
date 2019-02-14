@@ -36,13 +36,8 @@
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="socket"
-                android:textAllCaps="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:text="http/https"
+                android:onClick="onNetworkClick"
+                android:text="network"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
