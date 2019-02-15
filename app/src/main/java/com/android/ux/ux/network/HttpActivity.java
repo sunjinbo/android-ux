@@ -20,6 +20,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 import retrofit2.Retrofit;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 import retrofit2.http.GET;
 
 public class HttpActivity extends Activity {
@@ -90,6 +91,7 @@ public class HttpActivity extends Activity {
         try {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl("https://www.baidu.com")
+                    .addConverterFactory(ScalarsConverterFactory.create())
                     .build();
 
             HtmlService htmlService = retrofit.create(HtmlService.class);
@@ -114,6 +116,10 @@ public class HttpActivity extends Activity {
         } catch (Exception e) {
             Log.e(TAG, e.getMessage());
         }
+    }
+
+    public void onVolleyClick(View view) {
+
     }
 
     private static String streamToString(InputStream is) {
