@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.android.ux.ux.R;
 import com.android.volley.RequestQueue;
@@ -67,6 +68,10 @@ public class HttpActivity extends Activity {
                 }
             }
         }).start();
+    }
+
+    public void onHttpClientClick(View view) {
+        Toast.makeText(this, "Android API 23已废弃HttpClient", Toast.LENGTH_SHORT).show();
     }
 
     public void onOkHttpClick(View view) {
@@ -138,6 +143,10 @@ public class HttpActivity extends Activity {
             }
         });
         queue.add(stringRequest);
+    }
+
+    public void onAndroidAsyncHttpClick(View view) {
+        Toast.makeText(this, "android-async-http基于HttpClient已不维护", Toast.LENGTH_SHORT).show();
     }
 
     private static String streamToString(InputStream is) {

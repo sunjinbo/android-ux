@@ -24,6 +24,13 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:onClick="onHttpClientClick"
+                android:text="HttpClient"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
                 android:onClick="onOkHttpClick"
                 android:text="OkHttp"
                 android:textAllCaps="false"
@@ -40,6 +47,13 @@
             <Button
                 android:onClick="onVolleyClick"
                 android:text="Volley"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="onAndroidAsyncHttpClick"
+                android:text="android-async-http"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
