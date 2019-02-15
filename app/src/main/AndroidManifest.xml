@@ -28,6 +28,8 @@
         <activity android:name=".webview.JSCallAndroidActivity" />
         <activity android:name=".NetworkActivity" />
         <activity android:name=".network.HttpActivity" />
+        <activity android:name=".DesignPatternsActivity" />
+        <activity android:name=".dp.ChainActivity" />
     </application>
 
 </manifest>

@@ -24,4 +24,8 @@ public class MainActivity extends Activity {
     public void onNetworkClick(View view) {
         startActivity(new Intent(this, NetworkActivity.class));
     }
+
+    public void onDesignPatternsClick(View view) {
+        startActivity(new Intent(this, DesignPatternsActivity.class));
+    }
 }

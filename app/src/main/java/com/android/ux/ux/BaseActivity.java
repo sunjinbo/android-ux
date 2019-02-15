@@ -28,7 +28,7 @@ public abstract class BaseActivity extends Activity {
         mListView.setAdapter(mAdapter);
     }
 
-    protected void addMessage(String message, int color) {
+    public void addMessage(String message, int color) {
         synchronized (this) {
             mData.add(new MessageInfo(message, color));
 
@@ -43,7 +43,7 @@ public abstract class BaseActivity extends Activity {
         }
     }
 
-    protected void addMessage(String message) {
+    public void addMessage(String message) {
         addMessage(message, Color.BLACK);
     }
 
