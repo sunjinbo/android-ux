@@ -17,6 +17,10 @@ public class MainActivity extends Activity {
         startActivity(new Intent(this, AsynchronousActivity.class));
     }
 
+    public void onPluginClick(View view) {
+        startActivity(new Intent(this, PluginActivity.class));
+    }
+
     public void onWebViewJSClick(View view) {
         startActivity(new Intent(this, WebViewActivity.class));
     }
@@ -27,5 +31,9 @@ public class MainActivity extends Activity {
 
     public void onDesignPatternsClick(View view) {
         startActivity(new Intent(this, DesignPatternsActivity.class));
+    }
+
+    public void onLayoutClick(View view) {
+        startActivity(new Intent(this, LayoutActivity.class));
     }
 }

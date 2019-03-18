@@ -30,6 +30,9 @@
         <activity android:name=".network.HttpActivity" />
         <activity android:name=".DesignPatternsActivity" />
         <activity android:name=".dp.ChainActivity" />
+        <activity android:name=".LayoutActivity" />
+        <activity android:name=".PluginActivity" />
+        <activity android:name=".plugins.ModuleActivity"></activity>
     </application>
 
 </manifest>

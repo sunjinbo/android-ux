@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ladybug.libtwo" >
+
+    <application>
+        <meta-data
+            android:name="com.ladybug.libtwo.LibTwo"
+            android:value="module_name" />
+
+        <meta-data
+            android:name="com.ladybug.libtwo.ServiceTwo"
+            android:value="module_service" />
+    </application>
+
+</manifest>

@@ -24,6 +24,7 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:onClick="onPluginClick"
                 android:text="plug-in"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
@@ -52,6 +53,13 @@
             <Button
                 android:onClick="onDesignPatternsClick"
                 android:text="design patterns"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="onLayoutClick"
+                android:text="layout"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
