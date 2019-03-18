@@ -3,11 +3,11 @@
 
     <application>
         <meta-data
-            android:name="com.ladybug.libtwo.LibOne"
+            android:name="com.ladybug.libone.LibOne"
             android:value="module_name" />
 
         <meta-data
-            android:name="com.ladybug.libtwo.ServiceOne"
+            android:name="com.ladybug.libone.ServiceOne"
             android:value="module_service" />
     </application>
 
