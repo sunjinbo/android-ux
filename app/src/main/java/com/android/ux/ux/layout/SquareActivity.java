@@ -1,4 +1,4 @@
-package com.android.ux.ux;
+package com.android.ux.ux.layout;
 
 import android.animation.ValueAnimator;
 import android.app.Activity;
@@ -9,10 +9,11 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-public class LayoutActivity extends Activity {
+import com.android.ux.ux.R;
+
+public class SquareActivity extends Activity {
 
     private View topView;
     private View middleView;
@@ -23,7 +24,7 @@ public class LayoutActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_layout);
+        setContentView(R.layout.activity_square);
 
         topView = findViewById(R.id.top_part);
         middleView = findViewById(R.id.middle_part);

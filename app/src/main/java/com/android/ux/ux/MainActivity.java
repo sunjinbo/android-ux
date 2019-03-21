@@ -1,8 +1,17 @@
 package com.android.ux.ux;
 
 import android.app.Activity;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.widget.ListView;
+
+import com.google.gson.Gson;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class MainActivity extends Activity {
 
@@ -26,15 +35,69 @@ public class MainActivity extends Activity {
     }
 
     private MainBean getDataFromAssets() {
-        MainBean bean = new MainBean();
-        MainBean.CategoryBean surfaceBean = new MainBean.CategoryBean();
-        surfaceBean.category_name = "asynchronous";
-        MainBean.ActivityBean surfaceViewActivityBean = new MainBean.ActivityBean("Handler+Looper+Message", "com.android.ux.ux.asynchronous.LooperActivity");
-        MainBean.ActivityBean textureViewActivityBean = new MainBean.ActivityBean("Runnable+Callable", "com.android.ux.ux.asynchronous.FutureActivity");
-        surfaceBean.category_list.add(surfaceViewActivityBean);
-        surfaceBean.category_list.add(textureViewActivityBean);
-        bean.all.add(surfaceBean);
+        String textString = getTextFromAssets();
+        Gson gson = new Gson();
+        MainBean bean = gson.fromJson(textString, MainBean.class);
         return bean;
     }
 
+    private String getTextFromAssets() {
+        String textString = "";
+        AssetManager am = getAssets();
+        try {
+            InputStream is = am.open("quak.json");
+
+            String code = getCode(is);
+
+            is= am.open("quak.json");
+
+            BufferedReader br = new BufferedReader(new InputStreamReader(is, code));
+
+            String line = br.readLine();
+            int i = 0;
+            while(line != null){
+                textString += line;
+                line = br.readLine();
+                i++;
+                if (i == 200) {
+                    break;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return textString;
+    }
+
+    public String getCode(InputStream is){
+        try {
+            BufferedInputStream bin = new BufferedInputStream(is);
+            int p;
+
+            p = (bin.read() << 8) + bin.read();
+
+            String code = null;
+
+            switch (p) {
+                case 0xefbb:
+                    code = "UTF-8";
+                    break;
+                case 0xfffe:
+                    code = "Unicode";
+                    break;
+                case 0xfeff:
+                    code = "UTF-16BE";
+                    break;
+                default:
+                    code = "GBK";
+            }
+            is.close();
+            return code;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 }

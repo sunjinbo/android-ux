@@ -19,21 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AsynchronousActivity" />
         <activity android:name=".asynchronous.LooperActivity" />
         <activity android:name=".asynchronous.FutureActivity" />
         <activity android:name=".asynchronous.HandlerThreadActivity" />
-        <activity android:name=".WebViewActivity" />
         <activity android:name=".webview.AndroidCallJSActivity" />
         <activity android:name=".webview.JSCallAndroidActivity" />
-        <activity android:name=".NetworkActivity" />
         <activity android:name=".network.HttpActivity" />
-        <activity android:name=".DesignPatternsActivity" />
         <activity android:name=".dp.ChainActivity" />
-        <activity android:name=".LayoutActivity" />
-        <activity android:name=".PluginActivity" />
         <activity android:name=".plugins.ModuleActivity" />
-        <activity android:name=".SurfaceActivity"></activity>
+        <activity android:name=".layout.SquareActivity" />
     </application>
 
 </manifest>
