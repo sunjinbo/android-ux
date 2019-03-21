@@ -32,7 +32,8 @@
         <activity android:name=".dp.ChainActivity" />
         <activity android:name=".LayoutActivity" />
         <activity android:name=".PluginActivity" />
-        <activity android:name=".plugins.ModuleActivity"></activity>
+        <activity android:name=".plugins.ModuleActivity" />
+        <activity android:name=".SurfaceActivity"></activity>
     </application>
 
 </manifest>

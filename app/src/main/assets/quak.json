@@ -1,0 +1,104 @@
+﻿{
+    "all": [{
+        "category_name": "asynchronous",
+        "category_list": [
+            {
+                "name": "Handler+Looper+Message",
+                "activity": "com.android.ux.ux.asynchronous.LooperActivity"
+            },
+            {
+                "name": "Runnable+Callable",
+                "activity": "com.android.ux.ux.asynchronous.FutureActivity"
+            },
+            {
+                "name": "AsyncTask+Thread+HandlerThread",
+                "activity": "com.android.ux.ux.asynchronous.HandlerThreadActivity"
+            },
+            {
+                "name": "ThreadLocal",
+                "activity": ""
+            },
+            {
+                "name": "Synchronized",
+                "activity": ""
+            },
+            {
+                "name": "Service+IntentService",
+                "activity": ""
+            },
+            {
+                "name": "AIDL",
+                "activity": ""
+            }
+        ]},
+        {
+        "category_name": "plugins",
+        "category_list": [
+            {
+                "name": "module",
+                "activity": "com.android.ux.ux.plugins.ModuleActivity"
+            }
+        ]},
+        {
+        "category_name": "data binding",
+        "category_list": [
+
+        ]},
+        {
+        "category_name": "network",
+        "category_list": [
+            {
+                "name": "http",
+                "activity": "com.android.ux.ux.network.HttpActivity"
+            },
+            {
+                "name": "socket",
+                "activity": ""
+            }
+        ]},
+        {
+        "category_name": "webview+JS",
+        "category_list": [
+            {
+                "name": "Android去调用JS的代码",
+                "activity": "com.android.ux.ux.webview.AndroidCallJSActivity"
+            },
+            {
+                "name": "JS去调用Android的代码",
+                "activity": "com.android.ux.ux.webview.JSCallAndroidActivity"
+            }
+        ]},
+        {
+        "category_name": "design patterns",
+        "category_list": [
+            {
+                "name": "Chain of responsibility",
+                "activity": "com.android.ux.ux.dp.ChainActivity"
+            }
+        ]},
+        {
+        "category_name": "layout",
+        "category_list": [
+            {
+                "name": "square",
+                "activity": "com.android.ux.ux.layout.SquareActivity"
+            }
+        ]},
+        {
+        "category_name": "surface",
+        "category_list": [
+            {
+                "name": "SurfaceView",
+                "activity": "com.android.ux.ux.surface.SurfaceViewActivity"
+            },
+            {
+                "name": "GLSurfaceView",
+                "activity": "com.android.ux.ux.surface.GLSurfaceView"
+            },
+            {
+                "name": "TextureView",
+                "activity": "com.android.ux.ux.surface.TextureView"
+            }
+        ]}
+    ]
+}

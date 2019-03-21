@@ -1,39 +1,40 @@
 package com.android.ux.ux;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
+
+    private ListView mListView;
+    private MainAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mListView = findViewById(R.id.list_view);
+        mAdapter = new MainAdapter(this, getDataFromAssets());
+        mListView.setAdapter(mAdapter);
     }
 
-    public void onAsynchronousClick(View view) {
-        startActivity(new Intent(this, AsynchronousActivity.class));
+    @Override
+    public void onBackPressed() {
+        if (mAdapter.canGoBack()) {
+            finish();
+        }
     }
 
-    public void onPluginClick(View view) {
-        startActivity(new Intent(this, PluginActivity.class));
+    private MainBean getDataFromAssets() {
+        MainBean bean = new MainBean();
+        MainBean.CategoryBean surfaceBean = new MainBean.CategoryBean();
+        surfaceBean.category_name = "asynchronous";
+        MainBean.ActivityBean surfaceViewActivityBean = new MainBean.ActivityBean("Handler+Looper+Message", "com.android.ux.ux.asynchronous.LooperActivity");
+        MainBean.ActivityBean textureViewActivityBean = new MainBean.ActivityBean("Runnable+Callable", "com.android.ux.ux.asynchronous.FutureActivity");
+        surfaceBean.category_list.add(surfaceViewActivityBean);
+        surfaceBean.category_list.add(textureViewActivityBean);
+        bean.all.add(surfaceBean);
+        return bean;
     }
 
-    public void onWebViewJSClick(View view) {
-        startActivity(new Intent(this, WebViewActivity.class));
-    }
-
-    public void onNetworkClick(View view) {
-        startActivity(new Intent(this, NetworkActivity.class));
-    }
-
-    public void onDesignPatternsClick(View view) {
-        startActivity(new Intent(this, DesignPatternsActivity.class));
-    }
-
-    public void onLayoutClick(View view) {
-        startActivity(new Intent(this, LayoutActivity.class));
-    }
 }
