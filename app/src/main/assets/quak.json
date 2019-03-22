@@ -88,8 +88,12 @@
         "category_name": "surface",
         "category_list": [
             {
-                "name": "SurfaceView",
-                "activity": ""
+                "name": "SurfaceView+Canvas",
+                "activity": "com.android.ux.ux.surface.SurfaceViewCanvasActivity"
+            },
+            {
+              "name": "SurfaceView+OpenGL",
+              "activity": "com.android.ux.ux.surface.SurfaceViewOpenGLActivity"
             },
             {
                 "name": "GLSurfaceView",
