@@ -97,7 +97,7 @@
             },
             {
                 "name": "GLSurfaceView",
-                "activity": ""
+                "activity": "com.android.ux.ux.surface.GLSurfaceViewActivity"
             },
             {
                 "name": "TextureView",

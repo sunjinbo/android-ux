@@ -29,7 +29,8 @@
         <activity android:name=".plugins.ModuleActivity" />
         <activity android:name=".layout.SquareActivity" />
         <activity android:name=".surface.SurfaceViewCanvasActivity" />
-        <activity android:name=".surface.SurfaceViewOpenGLActivity"></activity>
+        <activity android:name=".surface.SurfaceViewOpenGLActivity" />
+        <activity android:name=".surface.GLSurfaceViewActivity"></activity>
     </application>
 
 </manifest>
