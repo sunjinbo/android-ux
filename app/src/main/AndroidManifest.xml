@@ -30,7 +30,8 @@
         <activity android:name=".layout.SquareActivity" />
         <activity android:name=".surface.SurfaceViewCanvasActivity" />
         <activity android:name=".surface.SurfaceViewOpenGLActivity" />
-        <activity android:name=".surface.GLSurfaceViewActivity"></activity>
+        <activity android:name=".surface.GLSurfaceViewActivity" />
+        <activity android:name=".surface.TextureViewActivity"></activity>
     </application>
 
 </manifest>

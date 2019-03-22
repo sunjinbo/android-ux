@@ -101,7 +101,7 @@
             },
             {
                 "name": "TextureView",
-                "activity": ""
+                "activity": "com.android.ux.ux.surface.TextureViewActivity"
             }
         ]}
     ]
