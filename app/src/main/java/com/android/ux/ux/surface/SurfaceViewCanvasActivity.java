@@ -1,5 +1,7 @@
 package com.android.ux.ux.surface;
 
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.app.Activity;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -7,12 +9,13 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 
 import com.android.ux.ux.R;
 
 import java.util.Random;
 
-public class SurfaceViewCanvasActivity extends Activity implements SurfaceHolder.Callback, Runnable {
+public class SurfaceViewCanvasActivity extends Activity implements SurfaceHolder.Callback, Runnable, View.OnClickListener {
 
     private SurfaceView mSurfaceView;
     private SurfaceHolder mSurfaceHolder;
@@ -25,6 +28,7 @@ public class SurfaceViewCanvasActivity extends Activity implements SurfaceHolder
         setContentView(R.layout.activity_surface_view_canvas);
         mRandom = new Random();
         mSurfaceView = findViewById(R.id.surface_view);
+        mSurfaceView.setOnClickListener(this);
         mSurfaceHolder = mSurfaceView.getHolder();
         mSurfaceHolder.addCallback(this);
     }
@@ -54,5 +58,14 @@ public class SurfaceViewCanvasActivity extends Activity implements SurfaceHolder
             mSurfaceHolder.unlockCanvasAndPost(canvas);
             SystemClock.sleep(222);
         }
+    }
+
+    @Override
+    public void onClick(View view) {
+        PropertyValuesHolder valuesHolder = PropertyValuesHolder.ofFloat("rotationY", 0.0f, 360.0f, 0.0F);
+        PropertyValuesHolder valuesHolder1 = PropertyValuesHolder.ofFloat("scaleX", 1.0f, 0.5f,1.0f);
+        PropertyValuesHolder valuesHolder3 = PropertyValuesHolder.ofFloat("scaleY", 1.0f, 0.5f,1.0f);
+        ObjectAnimator objectAnimator = ObjectAnimator.ofPropertyValuesHolder(mSurfaceView,  valuesHolder,valuesHolder1,valuesHolder3);
+        objectAnimator.setDuration(5000).start();
     }
 }
