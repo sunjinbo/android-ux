@@ -23,8 +23,12 @@
                 "activity": ""
             },
             {
-                "name": "Service+IntentService",
-                "activity": ""
+                "name": "bindService vs. startService",
+                "activity": "com.android.ux.ux.asynchronous.ServiceActivity"
+            },
+            {
+                "name": "IntentService",
+                "activity": "com.android.ux.ux.asynchronous.IntentServiceActivity"
             },
             {
                 "name": "AIDL",

@@ -22,6 +22,8 @@
         <activity android:name=".asynchronous.LooperActivity" />
         <activity android:name=".asynchronous.FutureActivity" />
         <activity android:name=".asynchronous.HandlerThreadActivity" />
+        <activity android:name=".asynchronous.ServiceActivity" />
+        <activity android:name=".asynchronous.IntentServiceActivity" />
         <activity android:name=".webview.AndroidCallJSActivity" />
         <activity android:name=".webview.JSCallAndroidActivity" />
         <activity android:name=".network.HttpActivity" />
@@ -31,7 +33,12 @@
         <activity android:name=".surface.SurfaceViewCanvasActivity" />
         <activity android:name=".surface.SurfaceViewOpenGLActivity" />
         <activity android:name=".surface.GLSurfaceViewActivity" />
-        <activity android:name=".surface.TextureViewActivity"></activity>
+        <activity android:name=".surface.TextureViewActivity" />
+
+        <service
+            android:name=".asynchronous.AsyncService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
