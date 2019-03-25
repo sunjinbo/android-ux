@@ -39,6 +39,9 @@
             android:name=".asynchronous.AsyncService"
             android:enabled="true"
             android:exported="true" />
+        <service
+            android:name=".asynchronous.AsyncIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>
