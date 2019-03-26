@@ -31,6 +31,10 @@
                 "activity": "com.android.ux.ux.asynchronous.IntentServiceActivity"
             },
             {
+                "name": "ANR-WatchDog",
+                "activity": "com.android.ux.ux.asynchronous.ANRActivity"
+            },
+            {
                 "name": "AIDL",
                 "activity": ""
             }
@@ -42,11 +46,6 @@
                 "name": "module",
                 "activity": "com.android.ux.ux.plugins.ModuleActivity"
             }
-        ]},
-        {
-        "category_name": "data binding",
-        "category_list": [
-
         ]},
         {
         "category_name": "network",

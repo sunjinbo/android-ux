@@ -41,7 +41,9 @@
             android:exported="true" />
         <service
             android:name=".asynchronous.AsyncIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
+
+        <activity android:name=".asynchronous.ANRActivity"></activity>
     </application>
 
 </manifest>
