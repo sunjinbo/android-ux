@@ -44,7 +44,10 @@
             android:exported="false" />
 
         <activity android:name=".asynchronous.ANRActivity" />
-        <activity android:name=".network.SocketActivity"></activity>
+        <activity android:name=".network.SocketActivity" />
+        <activity android:name=".asynchronous.ThreadLocalActivity" />
+        <activity android:name=".asynchronous.LockActivity" />
+        <activity android:name=".asynchronous.AIDLActivity"></activity>
     </application>
 
 </manifest>

@@ -16,11 +16,11 @@
             },
             {
                 "name": "ThreadLocal",
-                "activity": ""
+                "activity": "com.android.ux.ux.asynchronous.ThreadLocalActivity"
             },
             {
-                "name": "Synchronized",
-                "activity": ""
+                "name": "lock",
+                "activity": "com.android.ux.ux.asynchronous.LockActivity"
             },
             {
                 "name": "bindService vs. startService",
@@ -36,7 +36,7 @@
             },
             {
                 "name": "AIDL",
-                "activity": ""
+                "activity": "com.android.ux.ux.asynchronous.AIDLActivity"
             }
         ]},
         {
