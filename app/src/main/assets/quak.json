@@ -56,7 +56,7 @@
             },
             {
                 "name": "socket",
-                "activity": ""
+                "activity": "com.android.ux.ux.network.SocketActivity"
             }
         ]},
         {

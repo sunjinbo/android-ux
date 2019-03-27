@@ -43,7 +43,8 @@
             android:name=".asynchronous.AsyncIntentService"
             android:exported="false" />
 
-        <activity android:name=".asynchronous.ANRActivity"></activity>
+        <activity android:name=".asynchronous.ANRActivity" />
+        <activity android:name=".network.SocketActivity"></activity>
     </application>
 
 </manifest>
