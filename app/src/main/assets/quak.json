@@ -85,6 +85,10 @@
             {
                 "name": "square",
                 "activity": "com.android.ux.ux.layout.SquareActivity"
+            },
+            {
+                "name": "discover",
+                "activity": "com.android.ux.ux.layout.DiscoverActivity"
             }
         ]},
         {
