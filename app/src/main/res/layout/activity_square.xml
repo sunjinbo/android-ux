@@ -7,9 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ff0"
-    tools:context=".layout.SquareActivity">
+    tools:context=".views.SquareActivity">
 
-    <com.android.ux.ux.layout.SquareLayout
+    <com.android.ux.ux.views.SquareLayout
         android:id="@+id/top_part"
         android:layout_gravity="top|center_horizontal"
         android:layout_width="match_parent"

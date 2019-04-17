@@ -1,4 +1,4 @@
-package com.android.ux.ux.layout;
+package com.android.ux.ux.views;
 
 import android.animation.ValueAnimator;
 import android.app.Activity;

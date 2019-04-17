@@ -6,9 +6,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.DiscoverActivity">
+    tools:context=".views.DiscoverActivity">
 
-    <com.android.ux.ux.layout.DiscoverAnimView
+    <com.android.ux.ux.views.DiscoverAnimView
         android:id="@+id/discover_anim_view"
         android:layout_marginLeft="56dp"
         android:layout_marginRight="56dp"
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.android.ux.ux.layout.BindAnimView
+    <com.android.ux.ux.views.BindAnimView
         android:id="@+id/bind_anim_view"
         android:layout_marginLeft="56dp"
         android:layout_marginRight="56dp"

@@ -1,4 +1,4 @@
-package com.android.ux.ux.layout;
+package com.android.ux.ux.views;
 
 import android.app.Activity;
 import android.os.Bundle;

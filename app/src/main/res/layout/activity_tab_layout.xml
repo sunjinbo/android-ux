@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.TabLayoutActivity">
+
+    <com.android.ux.ux.views.MyTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#000"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabPaddingStart="-1dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingTop="-1dp"
+        app:tabPaddingBottom="2dp"
+        app:tabPadding="-1dp"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="#f0f"
+        app:tabIndicatorFullWidth="false"
+        app:tabInlineLabel="true"
+        app:tabTextColor="#fff"
+        app:tabSelectedTextColor="#f0f"
+        />
+
+    <com.android.ux.ux.views.MyTabLayout
+        android:id="@+id/custom_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#000"
+        android:layout_marginTop="28dp"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabPaddingStart="-1dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingTop="-1dp"
+        app:tabPaddingBottom="2dp"
+        app:tabPadding="-1dp"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="#f0f"
+        app:tabIndicatorFullWidth="false"
+        app:tabInlineLabel="true"
+        app:tabTextColor="#fff"
+        app:tabSelectedTextColor="#f0f"
+        />
+
+</LinearLayout>

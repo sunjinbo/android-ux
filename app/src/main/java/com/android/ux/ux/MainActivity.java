@@ -45,11 +45,11 @@ public class MainActivity extends Activity {
         String textString = "";
         AssetManager am = getAssets();
         try {
-            InputStream is = am.open("quak.json");
+            InputStream is = am.open("quack.json");
 
             String code = getCode(is);
 
-            is= am.open("quak.json");
+            is= am.open("quack.json");
 
             BufferedReader br = new BufferedReader(new InputStreamReader(is, code));
 

@@ -80,15 +80,19 @@
             }
         ]},
         {
-        "category_name": "layout",
+        "category_name": "views",
         "category_list": [
             {
                 "name": "square",
-                "activity": "com.android.ux.ux.layout.SquareActivity"
+                "activity": "com.android.ux.ux.views.SquareActivity"
             },
             {
                 "name": "discover",
-                "activity": "com.android.ux.ux.layout.DiscoverActivity"
+                "activity": "com.android.ux.ux.views.DiscoverActivity"
+            },
+            {
+                "name": "TabLayout",
+                "activity": "com.android.ux.ux.views.TabLayoutActivity"
             }
         ]},
         {
