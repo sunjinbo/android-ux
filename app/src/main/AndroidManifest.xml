@@ -5,6 +5,12 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -27,6 +33,7 @@
         <activity android:name=".webview.AndroidCallJSActivity" />
         <activity android:name=".webview.JSCallAndroidActivity" />
         <activity android:name=".network.HttpActivity" />
+        <activity android:name=".network.NetworkStatusActivity" />
         <activity android:name=".dp.ChainActivity" />
         <activity android:name=".plugins.ModuleActivity" />
         <activity android:name=".views.SquareActivity" />
@@ -34,6 +41,13 @@
         <activity android:name=".surface.SurfaceViewOpenGLActivity" />
         <activity android:name=".surface.GLSurfaceViewActivity" />
         <activity android:name=".surface.TextureViewActivity" />
+        <activity android:name=".asynchronous.ANRActivity" />
+        <activity android:name=".network.SocketActivity" />
+        <activity android:name=".asynchronous.ThreadLocalActivity" />
+        <activity android:name=".asynchronous.LockActivity" />
+        <activity android:name=".asynchronous.AIDLActivity" />
+        <activity android:name=".views.DiscoverActivity" />
+        <activity android:name=".views.TabLayoutActivity"></activity>
 
         <service
             android:name=".asynchronous.AsyncService"
@@ -42,14 +56,6 @@
         <service
             android:name=".asynchronous.AsyncIntentService"
             android:exported="false" />
-
-        <activity android:name=".asynchronous.ANRActivity" />
-        <activity android:name=".network.SocketActivity" />
-        <activity android:name=".asynchronous.ThreadLocalActivity" />
-        <activity android:name=".asynchronous.LockActivity" />
-        <activity android:name=".asynchronous.AIDLActivity" />
-        <activity android:name=".views.DiscoverActivity" />
-        <activity android:name=".views.TabLayoutActivity"></activity>
     </application>
 
 </manifest>

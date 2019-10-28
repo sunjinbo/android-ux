@@ -57,6 +57,10 @@
             {
                 "name": "socket",
                 "activity": "com.android.ux.ux.network.SocketActivity"
+            },
+            {
+                "name": "network status",
+                "activity": "com.android.ux.ux.network.NetworkStatusActivity"
             }
         ]},
         {
