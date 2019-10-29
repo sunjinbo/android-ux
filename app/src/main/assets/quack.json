@@ -4,39 +4,39 @@
         "category_list": [
             {
                 "name": "Handler+Looper+Message",
-                "activity": "com.android.ux.ux.asynchronous.LooperActivity"
+                "activity": "com.android.quack.asynchronous.LooperActivity"
             },
             {
                 "name": "Runnable+Callable",
-                "activity": "com.android.ux.ux.asynchronous.FutureActivity"
+                "activity": "com.android.quack.asynchronous.FutureActivity"
             },
             {
                 "name": "AsyncTask+Thread+HandlerThread",
-                "activity": "com.android.ux.ux.asynchronous.HandlerThreadActivity"
+                "activity": "com.android.quack.asynchronous.HandlerThreadActivity"
             },
             {
                 "name": "ThreadLocal",
-                "activity": "com.android.ux.ux.asynchronous.ThreadLocalActivity"
+                "activity": "com.android.quack.asynchronous.ThreadLocalActivity"
             },
             {
                 "name": "lock",
-                "activity": "com.android.ux.ux.asynchronous.LockActivity"
+                "activity": "com.android.quack.asynchronous.LockActivity"
             },
             {
                 "name": "bindService vs. startService",
-                "activity": "com.android.ux.ux.asynchronous.ServiceActivity"
+                "activity": "com.android.quack.asynchronous.ServiceActivity"
             },
             {
                 "name": "IntentService",
-                "activity": "com.android.ux.ux.asynchronous.IntentServiceActivity"
+                "activity": "com.android.quack.asynchronous.IntentServiceActivity"
             },
             {
                 "name": "ANR-WatchDog",
-                "activity": "com.android.ux.ux.asynchronous.ANRActivity"
+                "activity": "com.android.quack.asynchronous.ANRActivity"
             },
             {
                 "name": "AIDL",
-                "activity": "com.android.ux.ux.asynchronous.AIDLActivity"
+                "activity": "com.android.quack.asynchronous.AIDLActivity"
             }
         ]},
         {
@@ -44,23 +44,39 @@
         "category_list": [
             {
                 "name": "module",
-                "activity": "com.android.ux.ux.plugins.ModuleActivity"
+                "activity": "com.android.quack.plugins.ModuleActivity"
             }
         ]},
+        {
+            "category_name": "system",
+            "category_list": [
+                {
+                    "name": "lock screen",
+                    "activity": "com.android.quack.system.LockScreenActivity"
+                },
+                {
+                    "name": "notification",
+                    "activity": "com.android.quack.system.NotificationActivity"
+                },
+                {
+                    "name": "badge",
+                    "activity": "com.android.quack.system.BadgeActivity"
+                }
+            ]},
         {
         "category_name": "network",
         "category_list": [
             {
                 "name": "http",
-                "activity": "com.android.ux.ux.network.HttpActivity"
+                "activity": "com.android.quack.network.HttpActivity"
             },
             {
                 "name": "socket",
-                "activity": "com.android.ux.ux.network.SocketActivity"
+                "activity": "com.android.quack.network.SocketActivity"
             },
             {
                 "name": "network status",
-                "activity": "com.android.ux.ux.network.NetworkStatusActivity"
+                "activity": "com.android.quack.network.NetworkStatusActivity"
             }
         ]},
         {
@@ -68,11 +84,11 @@
         "category_list": [
             {
                 "name": "Android去调用JS的代码",
-                "activity": "com.android.ux.ux.webview.AndroidCallJSActivity"
+                "activity": "com.android.quack.webview.AndroidCallJSActivity"
             },
             {
                 "name": "JS去调用Android的代码",
-                "activity": "com.android.ux.ux.webview.JSCallAndroidActivity"
+                "activity": "com.android.quack.webview.JSCallAndroidActivity"
             }
         ]},
         {
@@ -80,7 +96,7 @@
         "category_list": [
             {
                 "name": "Chain of responsibility",
-                "activity": "com.android.ux.ux.dp.ChainActivity"
+                "activity": "com.android.quack.dp.ChainActivity"
             }
         ]},
         {
@@ -88,15 +104,15 @@
         "category_list": [
             {
                 "name": "square",
-                "activity": "com.android.ux.ux.views.SquareActivity"
+                "activity": "com.android.quack.views.SquareActivity"
             },
             {
                 "name": "discover",
-                "activity": "com.android.ux.ux.views.DiscoverActivity"
+                "activity": "com.android.quack.views.DiscoverActivity"
             },
             {
                 "name": "TabLayout",
-                "activity": "com.android.ux.ux.views.TabLayoutActivity"
+                "activity": "com.android.quack.views.TabLayoutActivity"
             }
         ]},
         {
@@ -104,19 +120,19 @@
         "category_list": [
             {
                 "name": "SurfaceView+Canvas",
-                "activity": "com.android.ux.ux.surface.SurfaceViewCanvasActivity"
+                "activity": "com.android.quack.surface.SurfaceViewCanvasActivity"
             },
             {
               "name": "SurfaceView+OpenGL",
-              "activity": "com.android.ux.ux.surface.SurfaceViewOpenGLActivity"
+              "activity": "com.android.quack.surface.SurfaceViewOpenGLActivity"
             },
             {
                 "name": "GLSurfaceView",
-                "activity": "com.android.ux.ux.surface.GLSurfaceViewActivity"
+                "activity": "com.android.quack.surface.GLSurfaceViewActivity"
             },
             {
                 "name": "TextureView",
-                "activity": "com.android.ux.ux.surface.TextureViewActivity"
+                "activity": "com.android.quack.surface.TextureViewActivity"
             }
         ]}
     ]
