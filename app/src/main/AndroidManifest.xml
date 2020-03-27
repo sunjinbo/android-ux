@@ -30,6 +30,7 @@
         <activity android:name="com.android.quack.asynchronous.HandlerThreadActivity" />
         <activity android:name="com.android.quack.asynchronous.ServiceActivity" />
         <activity android:name="com.android.quack.asynchronous.IntentServiceActivity" />
+        <activity android:name="com.android.quack.asynchronous.ThreadPoolActivity" />
         <activity android:name="com.android.quack.webview.AndroidCallJSActivity" />
         <activity android:name="com.android.quack.webview.JSCallAndroidActivity" />
         <activity android:name="com.android.quack.network.HttpActivity" />

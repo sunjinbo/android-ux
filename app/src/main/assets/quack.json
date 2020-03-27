@@ -37,6 +37,10 @@
             {
                 "name": "AIDL",
                 "activity": "com.android.quack.asynchronous.AIDLActivity"
+            },
+            {
+                "name": "ThreadPool",
+                "activity": "com.android.quack.asynchronous.ThreadPoolActivity"
             }
         ]},
         {

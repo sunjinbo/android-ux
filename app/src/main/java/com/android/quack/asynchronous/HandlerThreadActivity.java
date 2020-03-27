@@ -1,5 +1,6 @@
 package com.android.quack.asynchronous;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -8,7 +9,7 @@ import android.os.SystemClock;
 
 import com.android.quack.BaseActivity;
 
-public class HandlerThreadActivity extends BaseActivity {
+public class HandlerThreadActivity extends BaseActivity implements Runnable {
 
     private HandlerThread mHandlerThread;
     private Handler mHandler;
@@ -36,6 +37,8 @@ public class HandlerThreadActivity extends BaseActivity {
             }
         });
         mHandler.sendEmptyMessageDelayed(0, 666);
+
+        new Thread(this).start();
     }
 
     @Override
@@ -44,5 +47,39 @@ public class HandlerThreadActivity extends BaseActivity {
 
         // 释放资源
         mHandlerThread.quit() ;
+    }
+
+    @Override
+    public void run() {
+        MyAsyncTask task = new MyAsyncTask();
+        task.execute();
+    }
+
+    private class MyAsyncTask extends AsyncTask<Void, Integer, Void> {
+
+        public MyAsyncTask() {
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+
+            SystemClock.sleep(1000);
+
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    addMessage(SystemClock.elapsedRealtime() + " <- AsyncTask");
+                }
+            });
+
+            if (HandlerThreadActivity.this.isDestroyed() || HandlerThreadActivity.this.isFinishing()) {
+                return null;
+            }
+
+            MyAsyncTask task = new MyAsyncTask();
+            task.execute();
+
+            return null;
+        }
     }
 }
