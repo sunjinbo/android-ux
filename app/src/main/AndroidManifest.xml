@@ -36,6 +36,7 @@
         <activity android:name="com.android.quack.network.HttpActivity" />
         <activity android:name="com.android.quack.network.NetworkStatusActivity" />
         <activity android:name="com.android.quack.dp.ChainActivity" />
+        <activity android:name="com.android.quack.dp.DaggerActivity" />
         <activity android:name="com.android.quack.plugins.ModuleActivity" />
         <activity android:name="com.android.quack.views.SquareActivity" />
         <activity android:name="com.android.quack.surface.SurfaceViewCanvasActivity" />
@@ -48,7 +49,7 @@
         <activity android:name="com.android.quack.asynchronous.LockActivity" />
         <activity android:name="com.android.quack.asynchronous.AIDLActivity" />
         <activity android:name="com.android.quack.views.DiscoverActivity" />
-        <activity android:name="com.android.quack.views.TabLayoutActivity"></activity>
+        <activity android:name="com.android.quack.views.TabLayoutActivity" />
 
         <service
             android:name="com.android.quack.asynchronous.AsyncService"

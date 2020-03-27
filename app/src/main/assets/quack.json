@@ -101,6 +101,10 @@
             {
                 "name": "Chain of responsibility",
                 "activity": "com.android.quack.dp.ChainActivity"
+            },
+            {
+                "name": "Dagger",
+                "activity": "com.android.quack.dp.DaggerActivity"
             }
         ]},
         {
