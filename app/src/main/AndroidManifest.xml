@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -18,45 +18,47 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.android.quack.MainActivity">
+        <activity android:name=".security.AppLockActivity" />
+        <activity android:name=".security.AppUnlockActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.android.quack.asynchronous.LooperActivity" />
-        <activity android:name="com.android.quack.asynchronous.FutureActivity" />
-        <activity android:name="com.android.quack.asynchronous.HandlerThreadActivity" />
-        <activity android:name="com.android.quack.asynchronous.ServiceActivity" />
-        <activity android:name="com.android.quack.asynchronous.IntentServiceActivity" />
-        <activity android:name="com.android.quack.asynchronous.ThreadPoolActivity" />
-        <activity android:name="com.android.quack.webview.AndroidCallJSActivity" />
-        <activity android:name="com.android.quack.webview.JSCallAndroidActivity" />
-        <activity android:name="com.android.quack.network.HttpActivity" />
-        <activity android:name="com.android.quack.network.NetworkStatusActivity" />
-        <activity android:name="com.android.quack.dp.ChainActivity" />
-        <activity android:name="com.android.quack.dp.DaggerActivity" />
-        <activity android:name="com.android.quack.plugins.ModuleActivity" />
-        <activity android:name="com.android.quack.views.SquareActivity" />
-        <activity android:name="com.android.quack.surface.SurfaceViewCanvasActivity" />
-        <activity android:name="com.android.quack.surface.SurfaceViewOpenGLActivity" />
-        <activity android:name="com.android.quack.surface.GLSurfaceViewActivity" />
-        <activity android:name="com.android.quack.surface.TextureViewActivity" />
-        <activity android:name="com.android.quack.asynchronous.ANRActivity" />
-        <activity android:name="com.android.quack.network.SocketActivity" />
-        <activity android:name="com.android.quack.asynchronous.ThreadLocalActivity" />
-        <activity android:name="com.android.quack.asynchronous.LockActivity" />
-        <activity android:name="com.android.quack.asynchronous.AIDLActivity" />
-        <activity android:name="com.android.quack.views.DiscoverActivity" />
-        <activity android:name="com.android.quack.views.TabLayoutActivity" />
+        <activity android:name=".asynchronous.LooperActivity" />
+        <activity android:name=".asynchronous.FutureActivity" />
+        <activity android:name=".asynchronous.HandlerThreadActivity" />
+        <activity android:name=".asynchronous.ServiceActivity" />
+        <activity android:name=".asynchronous.IntentServiceActivity" />
+        <activity android:name=".asynchronous.ThreadPoolActivity" />
+        <activity android:name=".webview.AndroidCallJSActivity" />
+        <activity android:name=".webview.JSCallAndroidActivity" />
+        <activity android:name=".network.HttpActivity" />
+        <activity android:name=".network.NetworkStatusActivity" />
+        <activity android:name=".dp.ChainActivity" />
+        <activity android:name=".dp.DaggerActivity" />
+        <activity android:name=".plugins.ModuleActivity" />
+        <activity android:name=".views.SquareActivity" />
+        <activity android:name=".surface.SurfaceViewCanvasActivity" />
+        <activity android:name=".surface.SurfaceViewOpenGLActivity" />
+        <activity android:name=".surface.GLSurfaceViewActivity" />
+        <activity android:name=".surface.TextureViewActivity" />
+        <activity android:name=".asynchronous.ANRActivity" />
+        <activity android:name=".network.SocketActivity" />
+        <activity android:name=".asynchronous.ThreadLocalActivity" />
+        <activity android:name=".asynchronous.LockActivity" />
+        <activity android:name=".asynchronous.AIDLActivity" />
+        <activity android:name=".views.DiscoverActivity" />
+        <activity android:name=".views.TabLayoutActivity" />
 
         <service
-            android:name="com.android.quack.asynchronous.AsyncService"
+            android:name=".asynchronous.AsyncService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name="com.android.quack.asynchronous.AsyncIntentService"
+            android:name=".asynchronous.AsyncIntentService"
             android:exported="false" />
     </application>
 

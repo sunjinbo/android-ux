@@ -124,6 +124,14 @@
             }
         ]},
         {
+            "category_name": "security",
+            "category_list": [
+                {
+                    "name": "AppLock",
+                    "activity": "com.android.quack.security.AppLockActivity"
+                }
+            ]},
+        {
         "category_name": "surface",
         "category_list": [
             {
