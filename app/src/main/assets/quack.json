@@ -150,6 +150,18 @@
                 "name": "TextureView",
                 "activity": "com.android.quack.surface.TextureViewActivity"
             }
+        ]},
+        {
+        "category_name": "list",
+        "category_list": [
+            {
+                "name": "ListView + recycle bin",
+                "activity": "com.android.quack.list.ListViewActivity"
+            },
+            {
+                "name": "RecyclerView + recycle bin",
+                "activity": "com.android.quack.list.RecyclerViewActivity"
+            }
         ]}
     ]
 }
