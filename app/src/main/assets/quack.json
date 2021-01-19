@@ -149,6 +149,10 @@
             {
                 "name": "TextureView",
                 "activity": "com.android.quack.surface.TextureViewActivity"
+            },
+            {
+                "name": "Choreographer",
+                "activity": "com.android.quack.surface.ChoreographerActivity"
             }
         ]},
         {
