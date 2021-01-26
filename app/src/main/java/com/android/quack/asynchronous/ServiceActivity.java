@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.*;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -46,9 +47,11 @@ public class ServiceActivity extends Activity implements AsyncService.Callback {
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             Log.d("srv", "ServiceActivity.onServiceConnected()");
-            mBinder = ((AsyncService.AsyncBinder) iBinder);
-            if (mBinder != null) {
-                mBinder.getService().setCallback(ServiceActivity.this);
+            if (iBinder instanceof AsyncService.AsyncBinder) {
+                mBinder = ((AsyncService.AsyncBinder) iBinder);
+                if (mBinder != null) {
+                    mBinder.getService().setCallback(ServiceActivity.this);
+                }
             }
         }
 
@@ -57,6 +60,7 @@ public class ServiceActivity extends Activity implements AsyncService.Callback {
             Log.d("srv", "ServiceActivity.onServiceDisconnected()");
             if (mBinder != null) {
                 mBinder.getService().setCallback(null);
+                mBinder = null;
             }
         }
     };

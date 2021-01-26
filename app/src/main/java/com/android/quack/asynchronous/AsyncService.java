@@ -40,7 +40,7 @@ public class AsyncService extends Service implements Runnable {
     @Override
     public int onStartCommand(Intent intent, int startId, int flags) {
         Log.d("srv", "AsyncService.onStartCommand()");
-        return super.onStartCommand(intent, startId, flags);
+        return START_STICKY;
     }
 
     @Override
