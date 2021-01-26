@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".asynchronous.MessengerActivity" />
         <activity android:name=".surface.ChoreographerActivity" />
         <activity android:name=".list.RecyclerViewActivity" />
         <activity android:name=".list.ListViewActivity" />
@@ -60,15 +61,19 @@
         <service
             android:name=".asynchronous.AsyncService"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
         <service
             android:name=".asynchronous.AsyncIntentService"
             android:exported="false" />
-
         <service
             android:name=".asynchronous.AIDLService"
-            android:process=":remote"
-            android:exported="true" />
+            android:exported="true"
+            android:process=":remote" />
+
+        <service
+            android:name=".asynchronous.MessengerService"
+            android:exported="true"
+            android:process=":remote" />
     </application>
 
 </manifest>

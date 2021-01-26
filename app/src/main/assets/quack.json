@@ -39,6 +39,10 @@
                 "activity": "com.android.quack.asynchronous.AIDLActivity"
             },
             {
+                "name": "Messenger",
+                "activity": "com.android.quack.asynchronous.MessengerActivity"
+            },
+            {
                 "name": "ThreadPool",
                 "activity": "com.android.quack.asynchronous.ThreadPoolActivity"
             }
